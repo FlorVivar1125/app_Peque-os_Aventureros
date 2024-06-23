@@ -16,7 +16,7 @@ pip install -r requirements.txt
 python src/main.py
 ```
 
-# USO:
+# Uso:
 Una vez que la aplicación esté en funcionamiento, los niños pueden seleccionar diferentes actividades y juegos desde la pantalla principal.
 
 ## Contribuir:
@@ -27,24 +27,24 @@ Si deseas contribuir a este proyecto, por favor, sigue los siguientes pasos:
 4. Haz push a la rama (`git push origin feature/nueva_funcionalidad`).
 5. Abre un Pull Request.
 
-## Tecnologías Utilizadas
+## Tecnologías Utilizadas:
 - Python 3.8
 - Flask
 - SQLite
 - HTML/CSS/JavaScript
 
-## Capturas de Pantalla
+## Capturas de Pantalla:
 ![Pantalla Principal](path/to/screenshot.png)
 
-## Estado del Proyecto
+## Estado del Proyecto:
 Este proyecto está actualmente en desarrollo.
 
-## Futuras Mejoras
+## Futuras Mejoras:
 - Añadir más juegos educativos
 - Mejorar la interfaz de usuario
 - Implementar un sistema de recompensas
 
-## Agradecimientos
+## Agradecimientos:
 - Gracias a [Nombre](https://github.com/nombre) por su ayuda con el diseño.
 - Agradecimientos especiales a [Recurso](https://link-a-recurso.com) por proporcionar las imágenes.
 
