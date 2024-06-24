@@ -7,6 +7,9 @@ Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la reso
 - Entorno seguro.
 - Interfaz amigable para niños.
 
+![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/bc11d6ae-5d02-46b1-837a-c7b8f9c84ffe)
+
+
 ## Instalación
 Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 ```sh
