@@ -1,55 +1,41 @@
 # app_Pequeños_Aventureros
-Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la resolución de problemas en un entorno seguro y entretenido.
+Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la resolución de problemas en un entorno seguro y entretenido para niños pequeños. Nuestra aplicación ofrece una variedad de juegos interactivos diseñados para fomentar el desarrollo cognitivo, emocional y social de los niños.
 
 ## Características:
 - Juegos educativos.
 - Actividades creativas.
+- Resolución de problemas.
 - Entorno seguro.
-- Interfaz amigable para niños.
 
 ![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/bc11d6ae-5d02-46b1-837a-c7b8f9c84ffe)
 
 
-## Instalación
-Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
-```sh
-git clone https://github.com/FlorVivar1125/app_Pequeños_Aventureros.git
-cd app_Pequeños_Aventureros
-pip install -r requirements.txt
-python src/main.py
-```
+## Catálogo de productos:
 
-# Uso:
-Una vez que la aplicación esté en funcionamiento, los niños pueden seleccionar diferentes actividades y juegos desde la pantalla principal.
+**Juegos de aprendizaje temprano:**
 
-## Contribuir:
-Si deseas contribuir a este proyecto, por favor, sigue los siguientes pasos:
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva_funcionalidad`).
-3. Realiza tus cambios y haz commits (`git commit -am 'Añadir nueva funcionalidad'`).
-4. Haz push a la rama (`git push origin feature/nueva_funcionalidad`).
-5. Abre un Pull Request.
+Aventuras del alfabeto: Un juego interactivo que enseña las letras del alfabeto a través de canciones y actividades divertidas.
+Números mágicos: Ayuda a los niños a aprender los números y a contar con la ayuda de personajes mágicos.
+Colores y formas: Un juego que enseña a los niños a reconocer y diferenciar colores y formas a través de actividades creativas.
 
-## Tecnologías Utilizadas:
-- Python 3.8
-- Flask
-- SQLite
-- HTML/CSS/JavaScript
+**Juegos de creatividad:**
 
-## Capturas de Pantalla:
-![Pantalla Principal](path/to/screenshot.png)
+Cuentos fantásticos: Permite a los niños crear sus propias historias utilizando una amplia variedad de personajes y escenarios.
+Arte y diseño: Un juego que fomenta la creatividad a través del dibujo y la pintura virtual.
 
-## Estado del Proyecto:
-Este proyecto está actualmente en desarrollo.
+**Juegos de resolución de problemas:**
 
-## Futuras Mejoras:
-- Añadir más juegos educativos
-- Mejorar la interfaz de usuario
-- Implementar un sistema de recompensas
+Desafíos del castillo: Juegos de rompecabezas que ayudan a mejorar las habilidades de lógica y resolución de problemas.
+Aventura en la selva: Desafíos interactivos que requieren pensamiento crítico para resolver problemas y avanzar en la historia.
 
-## Agradecimientos:
-- Gracias a [Nombre](https://github.com/nombre) por su ayuda con el diseño.
-- Agradecimientos especiales a [Recurso](https://link-a-recurso.com) por proporcionar las imágenes.
+## Modelo Lógico
+![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/a9337029-c753-45f8-b7cf-d7f692bca716)
 
-## Licencia:
-Este proyecto está licenciado bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+## Tablas principales
+Usuarios: Información sobre los usuarios (padres o tutores) que se registran en la aplicación.
+
+Productos: Almacena información sobre los juegos educativos disponibles en la aplicación.
+
+Categorías: Almacena las diferentes categorías en las que se pueden clasificar los productos (juegos educativos).
+
+Opiniones: Almacena las opiniones y calificaciones de los usuarios sobre los productos (juegos educativos).
