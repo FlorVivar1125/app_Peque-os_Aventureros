@@ -1,10 +1,15 @@
 # app_Pequeños_Aventureros
+
 Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la resolución de problemas en un entorno seguro y entretenido para niños pequeños. Nuestra aplicación ofrece una variedad de juegos interactivos diseñados para fomentar el desarrollo cognitivo, emocional y social de los niños.
 
 ## Características:
+
 - Juegos educativos.
+
 - Actividades creativas.
+
 - Resolución de problemas.
+
 - Entorno seguro.
 
 ![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/bc11d6ae-5d02-46b1-837a-c7b8f9c84ffe)
@@ -55,6 +60,7 @@ CREATE DATABASE pequenios_aventureros;
 USE pequenios_aventureros;
 
 -- Tabla de usuarios
+
 CREATE TABLE usuarios (
     
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
@@ -173,9 +179,19 @@ Consulta 1: Productos y sus Categorías
 
 Objetivo: Mostrar todos los productos junto con su categoría.
 
-SELECT nombre_producto, (SELECT nombre_categoria FROM categorias WHERE id_categoria = productos.categoria_id) AS Categoria, descripcion FROM productos;
+SELECT nombre_producto,
+
+
+(SELECT nombre_categoria
+
+FROM categorias
+
+WHERE id_categoria = productos.categoria_id) AS Categoria,
+
+descripcion FROM productos;
 
 ## Beneficios de la Aplicación
+
 La aplicación Pequeños Aventureros ofrece múltiples beneficios tanto para los niños como para los padres. Estos incluyen:
 
 Desarrollo Integral: Los juegos están diseñados para fomentar el desarrollo cognitivo, emocional y social de los niños, ayudándolos a adquirir habilidades importantes desde una edad temprana.
@@ -187,6 +203,7 @@ Monitoreo Parental: Los padres pueden seguir el progreso de sus hijos a través 
 Seguridad: La aplicación asegura un entorno seguro para los niños, protegiendo su información personal y garantizando que el contenido sea apropiado para su edad.
 
 ## Funcionalidades Clave
+
 Pequeños Aventureros incluye una serie de funcionalidades diseñadas para maximizar la experiencia educativa de los usuarios:
 
 Personalización: La aplicación se adapta al nivel de cada niño, ajustando la dificultad de los juegos según su progreso.
@@ -198,6 +215,7 @@ Contenido Actualizado: La aplicación se actualiza regularmente con nuevos juego
 Acceso Multiplataforma: Disponible en varios dispositivos, incluidos teléfonos inteligentes y tabletas, permitiendo que los niños puedan jugar y aprender en cualquier lugar.
 
 ## Opiniones de los Usuarios
+
 Las opiniones y comentarios de los usuarios son fundamentales para el desarrollo continuo de Pequeños Aventureros. A continuación, se presentan algunas opiniones destacadas:
 
 María López: "Mis hijos aman la aplicación. No solo se divierten, sino que he notado una gran mejora en su conocimiento del alfabeto y los números."
@@ -207,6 +225,7 @@ Juan Pérez: "Es una herramienta increíble para padres ocupados. Sé que mis hi
 Ana Rodríguez: "La sección de creatividad es su favorita. Les encanta crear sus propias historias, y yo me siento segura de que están en un entorno apropiado."
 
 ## Futuras Actualizaciones
+
 Pequeños Aventureros sigue evolucionando con el tiempo. Algunas de las características que se están planificando para futuras versiones incluyen:
 
 Multijugador: Integración de una función multijugador que permitirá a los niños jugar y aprender junto a sus amigos o familiares en tiempo real.
@@ -216,6 +235,7 @@ Nuevas Categorías: Expansión de las categorías de juegos para incluir temas c
 Realidad Aumentada (AR): Implementación de tecnologías de realidad aumentada para hacer que los juegos sean aún más inmersivos y atractivos.
 
 ## Conclusión
+
 La aplicación Pequeños Aventureros se ha convertido en una herramienta esencial para el aprendizaje temprano de los niños, combinando educación y entretenimiento en un solo lugar.
 Con su enfoque en la seguridad, personalización y continua innovación, se asegura de que los niños no solo se diviertan, sino que también desarrollen habilidades esenciales para su futuro.
 
