@@ -190,6 +190,16 @@ WHERE id_categoria = productos.categoria_id) AS Categoria,
 
 descripcion FROM productos;
 
+
+
+
+
+
+
+
+
+
+
 ## Beneficios de la Aplicación
 
 La aplicación Pequeños Aventureros ofrece múltiples beneficios tanto para los niños como para los padres. Estos incluyen:
