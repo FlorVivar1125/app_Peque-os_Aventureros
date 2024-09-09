@@ -83,21 +83,36 @@ create table categorias (
 );
 
 -- tabla de opiniones (reviews de los productos)
+
 create table opiniones (
+
     id_opinion int auto_increment primary key,
+
     id_usuario int,
+    
     id_producto int,
+    
     calificacion int check(calificacion >= 1 and calificacion <= 5),
+    
     comentario text,
+    
     fecha_opinion date,
+    
     foreign key (id_usuario) references usuarios(id_usuario),
+    
     foreign key (id_producto) references productos(id_producto)
+    
 );
 
 -- insertar datos en la tabla categorías
+
 insert into categorias (nombre_categoria) values 
+
+
 ('aprendizaje temprano'),
+
 ('creatividad'),
+
 ('resolución de problemas');
 
 -- insertar datos en la tabla usuarios
@@ -109,6 +124,7 @@ insert into usuarios (nombre, email, fecha_registro, tipo_usuario) values
 ('juan pérez', 'juan.perez@example.com', '2023-02-10', 'padre'),
 
 ('ana rodríguez', 'ana.rodriguez@example.com', '2023-03-22', 'tutor');
+
 
 -- insertar datos en la tabla productos
 
@@ -122,10 +138,15 @@ insert into productos (nombre_producto, descripcion, categoria_id) values
 
 ('desafíos del castillo', 'juego para mejorar habilidades de lógica', 3);
 
+
 -- insertar datos en la tabla opiniones
+
 insert into opiniones (id_usuario, id_producto, calificacion, comentario, fecha_opinion) values
+
 (1, 1, 5, 'a mi hijo le encantó, aprendió todas las letras', '2023-02-01'),
+
 (2, 2, 4, 'buen juego, aunque podrían agregar más niveles', '2023-02-20'),
+
 (3, 4, 5, 'muy educativo, a los niños les encantan los desafíos', '2023-03-10');
 
 
