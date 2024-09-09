@@ -15,140 +15,25 @@ Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la reso
 **Juegos de aprendizaje temprano:**
 
 Aventuras del alfabeto: Un juego interactivo que enseña las letras del alfabeto a través de canciones y actividades divertidas.
+
 Números mágicos: Ayuda a los niños a aprender los números y a contar con la ayuda de personajes mágicos.
+
 Colores y formas: Un juego que enseña a los niños a reconocer y diferenciar colores y formas a través de actividades creativas.
 
 **Juegos de creatividad:**
 
 Cuentos fantásticos: Permite a los niños crear sus propias historias utilizando una amplia variedad de personajes y escenarios.
+
 Arte y diseño: Un juego que fomenta la creatividad a través del dibujo y la pintura virtual.
 
 **Juegos de resolución de problemas:**
 
 Desafíos del castillo: Juegos de rompecabezas que ayudan a mejorar las habilidades de lógica y resolución de problemas.
+
 Aventura en la selva: Desafíos interactivos que requieren pensamiento crítico para resolver problemas y avanzar en la historia.
 
 ## Modelo Lógico
 ![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/a9337029-c753-45f8-b7cf-d7f692bca716)
-
-## Estructura de la Base de Datos y Scripts en MySQL para Pequeños Aventureros
--- creación de las tablas principales
-
-create database pequenios_aventureros;
-
-use pequenios_aventureros;
-
--- tabla de usuarios
-
-create table usuarios (
-
-    id_usuario int auto_increment primary key,
-    
-    nombre varchar(100),
-    
-    email varchar(100) unique,
-    
-    fecha_registro date,
-    
-    tipo_usuario enum('padre', 'tutor') not null
-
-);
-
-
--- tabla de productos (juegos educativos)
-
-create table productos (
-
-    id_producto int auto_increment primary key,
-    
-    nombre_producto varchar(100),
-    
-    descripcion text,
-    
-    categoria_id int,
-    
-    foreign key (categoria_id) references categorias(id_categoria)
-
-);
-
-
--- tabla de categorías
-
-create table categorias (
-
-    id_categoria int auto_increment primary key,
-    
-    nombre_categoria varchar(100)
-
-);
-
--- tabla de opiniones (reviews de los productos)
-
-create table opiniones (
-
-    id_opinion int auto_increment primary key,
-
-    id_usuario int,
-    
-    id_producto int,
-    
-    calificacion int check(calificacion >= 1 and calificacion <= 5),
-    
-    comentario text,
-    
-    fecha_opinion date,
-    
-    foreign key (id_usuario) references usuarios(id_usuario),
-    
-    foreign key (id_producto) references productos(id_producto)
-    
-);
-
--- insertar datos en la tabla categorías
-
-insert into categorias (nombre_categoria) values 
-
-
-('aprendizaje temprano'),
-
-('creatividad'),
-
-('resolución de problemas');
-
--- insertar datos en la tabla usuarios
-
-insert into usuarios (nombre, email, fecha_registro, tipo_usuario) values
-
-('maría lópez', 'maria.lopez@example.com', '2023-01-15', 'padre'),
-
-('juan pérez', 'juan.perez@example.com', '2023-02-10', 'padre'),
-
-('ana rodríguez', 'ana.rodriguez@example.com', '2023-03-22', 'tutor');
-
-
--- insertar datos en la tabla productos
-
-insert into productos (nombre_producto, descripcion, categoria_id) values
-
-('aventuras del alfabeto', 'juego para aprender las letras del alfabeto', 1),
-
-('números mágicos', 'juego para aprender los números', 1),
-
-('cuentos fantásticos', 'juego para crear historias creativas', 2),
-
-('desafíos del castillo', 'juego para mejorar habilidades de lógica', 3);
-
-
--- insertar datos en la tabla opiniones
-
-insert into opiniones (id_usuario, id_producto, calificacion, comentario, fecha_opinion) values
-
-(1, 1, 5, 'a mi hijo le encantó, aprendió todas las letras', '2023-02-01'),
-
-(2, 2, 4, 'buen juego, aunque podrían agregar más niveles', '2023-02-20'),
-
-(3, 4, 5, 'muy educativo, a los niños les encantan los desafíos', '2023-03-10');
-
 
 ## Tablas principales
 Usuarios: Información sobre los usuarios (padres o tutores) que se registran en la aplicación.
@@ -158,6 +43,137 @@ Productos: Almacena información sobre los juegos educativos disponibles en la a
 Categorías: Almacena las diferentes categorías en las que se pueden clasificar los productos (juegos educativos).
 
 Opiniones: Almacena las opiniones y calificaciones de los usuarios sobre los productos (juegos educativos).
+
+## Estructura de la Base de Datos y Scripts en MySQL para Pequeños Aventureros
+
+***Creación de la Base de Datos y Tablas***
+
+-- Creación de la base de datos
+
+CREATE DATABASE pequenios_aventureros;
+
+USE pequenios_aventureros;
+
+-- Tabla de usuarios
+CREATE TABLE usuarios (
+    
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    
+    nombre VARCHAR(100),
+    
+    email VARCHAR(100) UNIQUE,
+    
+    fecha_registro DATE,
+    
+    tipo_usuario ENUM('padre', 'tutor') NOT NULL
+
+);
+
+-- Tabla de categorías
+
+CREATE TABLE categorias (
+
+    id_categoria INT AUTO_INCREMENT PRIMARY KEY,
+    
+    nombre_categoria VARCHAR(100)
+
+);
+
+-- Tabla de productos (juegos educativos)
+
+CREATE TABLE productos (
+
+    id_producto INT AUTO_INCREMENT PRIMARY KEY,
+    
+    nombre_producto VARCHAR(100),
+    
+    descripcion TEXT,
+    
+    categoria_id INT,
+    
+    FOREIGN KEY (categoria_id) REFERENCES categorias(id_categoria)
+
+);
+
+-- Tabla de opiniones (reviews de los productos)
+
+CREATE TABLE opiniones (
+
+    id_opinion INT AUTO_INCREMENT PRIMARY KEY,
+    
+    id_usuario INT,
+    
+    id_producto INT,
+    
+    calificacion INT CHECK(calificacion >= 1 AND calificacion <= 5),
+    
+    comentario TEXT,
+    
+    fecha_opinion DATE,
+    
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
+   
+    FOREIGN KEY (id_producto) REFERENCES productos(id_producto)
+
+);
+
+***Inserción de Datos:***
+
+-- Inserción de datos en la tabla categorías
+
+INSERT INTO categorias (nombre_categoria) VALUES 
+
+('aprendizaje temprano'),
+
+('creatividad'),
+
+('resolución de problemas');
+
+-- Inserción de datos en la tabla usuarios
+
+INSERT INTO usuarios (nombre, email, fecha_registro, tipo_usuario) VALUES
+
+('María López', 'maria.lopez@example.com', '2023-01-15', 'padre'),
+
+('Juan Pérez', 'juan.perez@example.com', '2023-02-10', 'padre'),
+
+('Ana Rodríguez', 'ana.rodriguez@example.com', '2023-03-22', 'tutor');
+
+-- Inserción de datos en la tabla productos
+
+INSERT INTO productos (nombre_producto, descripcion, categoria_id) VALUES
+
+('Aventuras del Alfabeto', 'Juego para aprender las letras del alfabeto', 1),
+
+('Números Mágicos', 'Juego para aprender los números', 1),
+
+('Colores y Formas', 'Juego para reconocer y diferenciar colores y formas', 1),
+
+('Cuentos Fantásticos', 'Juego para crear historias creativas', 2),
+
+('Arte y Diseño', 'Juego para fomentar la creatividad a través del dibujo y la pintura', 2),
+
+('Desafíos del Castillo', 'Juego para mejorar habilidades de lógica', 3),
+
+('Aventura en la Selva', 'Desafíos interactivos que requieren pensamiento crítico', 3);
+
+-- Inserción de datos en la tabla opiniones
+
+INSERT INTO opiniones (id_usuario, id_producto, calificacion, comentario, fecha_opinion) VALUES
+
+(1, 1, 5, 'A mi hijo le encantó, aprendió todas las letras', '2023-02-01'),
+
+(2, 2, 4, 'Buen juego, aunque podrían agregar más niveles', '2023-02-20'),
+
+(3, 4, 5, 'Muy educativo, a los niños les encantan los desafíos', '2023-03-10');
+
+## Reportes del Problema
+
+Consulta 1: Productos y sus Categorías
+
+Objetivo: Mostrar todos los productos junto con su categoría.
+
+SELECT nombre_producto, (SELECT nombre_categoria FROM categorias WHERE id_categoria = productos.categoria_id) AS Categoria, descripcion FROM productos;
 
 ## Beneficios de la Aplicación
 La aplicación Pequeños Aventureros ofrece múltiples beneficios tanto para los niños como para los padres. Estos incluyen:
