@@ -31,6 +31,104 @@ Aventura en la selva: Desafíos interactivos que requieren pensamiento crítico 
 ## Modelo Lógico
 ![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/a9337029-c753-45f8-b7cf-d7f692bca716)
 
+## Estructura de la Base de Datos y Scripts en MySQL para Pequeños Aventureros
+-- creación de las tablas principales
+
+create database pequenios_aventureros;
+
+use pequenios_aventureros;
+
+-- tabla de usuarios
+
+create table usuarios (
+
+    id_usuario int auto_increment primary key,
+    
+    nombre varchar(100),
+    
+    email varchar(100) unique,
+    
+    fecha_registro date,
+    
+    tipo_usuario enum('padre', 'tutor') not null
+
+);
+
+
+-- tabla de productos (juegos educativos)
+
+create table productos (
+
+    id_producto int auto_increment primary key,
+    
+    nombre_producto varchar(100),
+    
+    descripcion text,
+    
+    categoria_id int,
+    
+    foreign key (categoria_id) references categorias(id_categoria)
+
+);
+
+
+-- tabla de categorías
+
+create table categorias (
+
+    id_categoria int auto_increment primary key,
+    
+    nombre_categoria varchar(100)
+
+);
+
+-- tabla de opiniones (reviews de los productos)
+create table opiniones (
+    id_opinion int auto_increment primary key,
+    id_usuario int,
+    id_producto int,
+    calificacion int check(calificacion >= 1 and calificacion <= 5),
+    comentario text,
+    fecha_opinion date,
+    foreign key (id_usuario) references usuarios(id_usuario),
+    foreign key (id_producto) references productos(id_producto)
+);
+
+-- insertar datos en la tabla categorías
+insert into categorias (nombre_categoria) values 
+('aprendizaje temprano'),
+('creatividad'),
+('resolución de problemas');
+
+-- insertar datos en la tabla usuarios
+
+insert into usuarios (nombre, email, fecha_registro, tipo_usuario) values
+
+('maría lópez', 'maria.lopez@example.com', '2023-01-15', 'padre'),
+
+('juan pérez', 'juan.perez@example.com', '2023-02-10', 'padre'),
+
+('ana rodríguez', 'ana.rodriguez@example.com', '2023-03-22', 'tutor');
+
+-- insertar datos en la tabla productos
+
+insert into productos (nombre_producto, descripcion, categoria_id) values
+
+('aventuras del alfabeto', 'juego para aprender las letras del alfabeto', 1),
+
+('números mágicos', 'juego para aprender los números', 1),
+
+('cuentos fantásticos', 'juego para crear historias creativas', 2),
+
+('desafíos del castillo', 'juego para mejorar habilidades de lógica', 3);
+
+-- insertar datos en la tabla opiniones
+insert into opiniones (id_usuario, id_producto, calificacion, comentario, fecha_opinion) values
+(1, 1, 5, 'a mi hijo le encantó, aprendió todas las letras', '2023-02-01'),
+(2, 2, 4, 'buen juego, aunque podrían agregar más niveles', '2023-02-20'),
+(3, 4, 5, 'muy educativo, a los niños les encantan los desafíos', '2023-03-10');
+
+
 ## Tablas principales
 Usuarios: Información sobre los usuarios (padres o tutores) que se registran en la aplicación.
 
