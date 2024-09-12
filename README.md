@@ -14,7 +14,6 @@ Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la reso
 
 ![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/bc11d6ae-5d02-46b1-837a-c7b8f9c84ffe)
 
-
 ## **Catálogo de productos:**
 
 **Juegos de aprendizaje temprano:**
@@ -211,6 +210,7 @@ Interactividad: La aplicación proporciona un entorno interactivo donde los niñ
 Monitoreo Parental: Los padres pueden seguir el progreso de sus hijos a través de la aplicación, permitiéndoles ver en qué áreas destacan y en cuáles podrían necesitar más apoyo.
 
 Seguridad: La aplicación asegura un entorno seguro para los niños, protegiendo su información personal y garantizando que el contenido sea apropiado para su edad.
+
 
 ## **Funcionalidades Clave**
 
