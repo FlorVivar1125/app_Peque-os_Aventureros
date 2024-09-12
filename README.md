@@ -1,6 +1,5 @@
 ## **App_Pequeños_Aventureros** ##
 Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la resolución de problemas en un entorno seguro y entretenido para niños pequeños. Nuestra aplicación ofrece una variedad de juegos interactivos diseñados para fomentar el desarrollo cognitivo, emocional y social de los niños.
-
 ## **Características:** ##
 
 - Juegos educativos.
