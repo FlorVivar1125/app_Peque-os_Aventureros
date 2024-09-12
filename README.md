@@ -7,7 +7,7 @@ Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la reso
 
 - Actividades creativas.
 
-- Resolución de problemas....
+- Resolución de problemas.
 
 - Entorno seguro.
 
