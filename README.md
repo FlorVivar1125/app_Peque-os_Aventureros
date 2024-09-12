@@ -224,7 +224,6 @@ Juan Pérez: "Es una herramienta increíble para padres ocupados. Sé que mis hi
 
 Ana Rodríguez: "La sección de creatividad es su favorita. Les encanta crear sus propias historias, y yo me siento segura de que están en un entorno apropiado."
 
-
 ## **Futuras Actualizaciones**
 
 Pequeños Aventureros sigue evolucionando con el tiempo. Algunas de las características que se están planificando para futuras versiones incluyen:
