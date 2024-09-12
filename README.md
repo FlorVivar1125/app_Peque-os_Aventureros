@@ -234,7 +234,7 @@ Juan Pérez: "Es una herramienta increíble para padres ocupados. Sé que mis hi
 
 Ana Rodríguez: "La sección de creatividad es su favorita. Les encanta crear sus propias historias, y yo me siento segura de que están en un entorno apropiado."
 
-## Futuras Actualizaciones
+## **Futuras Actualizaciones**
 
 Pequeños Aventureros sigue evolucionando con el tiempo. Algunas de las características que se están planificando para futuras versiones incluyen:
 
@@ -244,7 +244,7 @@ Nuevas Categorías: Expansión de las categorías de juegos para incluir temas c
 
 Realidad Aumentada (AR): Implementación de tecnologías de realidad aumentada para hacer que los juegos sean aún más inmersivos y atractivos.
 
-## Conclusión
+## ***Conclusión***
 
 La aplicación Pequeños Aventureros se ha convertido en una herramienta esencial para el aprendizaje temprano de los niños, combinando educación y entretenimiento en un solo lugar.
 Con su enfoque en la seguridad, personalización y continua innovación, se asegura de que los niños no solo se diviertan, sino que también desarrollen habilidades esenciales para su futuro.
