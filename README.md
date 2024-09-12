@@ -1,8 +1,8 @@
-# **App_Pequeños_Aventureros**
+## **App_Pequeños_Aventureros** ##
 
 Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la resolución de problemas en un entorno seguro y entretenido para niños pequeños. Nuestra aplicación ofrece una variedad de juegos interactivos diseñados para fomentar el desarrollo cognitivo, emocional y social de los niños.
 
-## **Características:**
+## **Características:** ##
 
 - Juegos educativos.
 
@@ -14,9 +14,9 @@ Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la reso
 
 ![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/bc11d6ae-5d02-46b1-837a-c7b8f9c84ffe)
 
-## **Catálogo de productos:**
+## **Catálogo de productos:** ##
 
-**Juegos de aprendizaje temprano:**
+## **Juegos de aprendizaje temprano:**
 
 Aventuras del alfabeto: Un juego interactivo que enseña las letras del alfabeto a través de canciones y actividades divertidas.
 
@@ -24,13 +24,13 @@ Números mágicos: Ayuda a los niños a aprender los números y a contar con la 
 
 Colores y formas: Un juego que enseña a los niños a reconocer y diferenciar colores y formas a través de actividades creativas.
 
-**Juegos de creatividad:**
+## **Juegos de creatividad:**
 
 Cuentos fantásticos: Permite a los niños crear sus propias historias utilizando una amplia variedad de personajes y escenarios.
 
 Arte y diseño: Un juego que fomenta la creatividad a través del dibujo y la pintura virtual.
 
-**Juegos de resolución de problemas:**
+## **Juegos de resolución de problemas:**
 
 Desafíos del castillo: Juegos de rompecabezas que ayudan a mejorar las habilidades de lógica y resolución de problemas.
 
@@ -172,6 +172,7 @@ INSERT INTO opiniones (id_usuario, id_producto, calificacion, comentario, fecha_
 
 (3, 4, 5, 'Muy educativo, a los niños les encantan los desafíos', '2023-03-10');
 
+
 ## **Reportes del Problema**
 
 Consulta 1: Productos y sus Categorías
@@ -188,15 +189,6 @@ FROM categorias
 WHERE id_categoria = productos.categoria_id) AS Categoria,
 
 descripcion FROM productos;
-
-
-
-
-
-
-
-
-
 
 
 ## **Beneficios de la Aplicación**
@@ -224,6 +216,7 @@ Contenido Actualizado: La aplicación se actualiza regularmente con nuevos juego
 
 Acceso Multiplataforma: Disponible en varios dispositivos, incluidos teléfonos inteligentes y tabletas, permitiendo que los niños puedan jugar y aprender en cualquier lugar.
 
+
 ## **Opiniones de los Usuarios**
 
 Las opiniones y comentarios de los usuarios son fundamentales para el desarrollo continuo de Pequeños Aventureros. A continuación, se presentan algunas opiniones destacadas:
@@ -234,6 +227,7 @@ Juan Pérez: "Es una herramienta increíble para padres ocupados. Sé que mis hi
 
 Ana Rodríguez: "La sección de creatividad es su favorita. Les encanta crear sus propias historias, y yo me siento segura de que están en un entorno apropiado."
 
+
 ## **Futuras Actualizaciones**
 
 Pequeños Aventureros sigue evolucionando con el tiempo. Algunas de las características que se están planificando para futuras versiones incluyen:
@@ -243,6 +237,7 @@ Multijugador: Integración de una función multijugador que permitirá a los ni�
 Nuevas Categorías: Expansión de las categorías de juegos para incluir temas como ciencias, historia y geografía, ofreciendo un aprendizaje más amplio y diverso.
 
 Realidad Aumentada (AR): Implementación de tecnologías de realidad aumentada para hacer que los juegos sean aún más inmersivos y atractivos.
+
 
 ## ***Conclusión***
 
