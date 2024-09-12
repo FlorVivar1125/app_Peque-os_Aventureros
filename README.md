@@ -173,7 +173,7 @@ INSERT INTO opiniones (id_usuario, id_producto, calificacion, comentario, fecha_
 
 (3, 4, 5, 'Muy educativo, a los niños les encantan los desafíos', '2023-03-10');
 
-## Reportes del Problema
+## **Reportes del Problema**
 
 Consulta 1: Productos y sus Categorías
 
@@ -200,7 +200,7 @@ descripcion FROM productos;
 
 
 
-## Beneficios de la Aplicación
+## **Beneficios de la Aplicación**
 
 La aplicación Pequeños Aventureros ofrece múltiples beneficios tanto para los niños como para los padres. Estos incluyen:
 
