@@ -1,4 +1,4 @@
-# ***App_Pequeños_Aventureros***
+# **App_Pequeños_Aventureros**
 
 Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la resolución de problemas en un entorno seguro y entretenido para niños pequeños. Nuestra aplicación ofrece una variedad de juegos interactivos diseñados para fomentar el desarrollo cognitivo, emocional y social de los niños.
 
@@ -49,7 +49,7 @@ Categorías: Almacena las diferentes categorías en las que se pueden clasificar
 
 Opiniones: Almacena las opiniones y calificaciones de los usuarios sobre los productos (juegos educativos).
 
-## **Estructura de la Base de Datos y Scripts en MySQL para Pequeños Aventureros**
+## ***Estructura de la Base de Datos y Scripts en MySQL para Pequeños Aventureros***
 
 **Creación de la Base de Datos y Tablas**
 
