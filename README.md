@@ -15,7 +15,6 @@ Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la reso
 ## **Catálogo de productos:** ##
 
 ## **Juegos de aprendizaje temprano:**
-
 Aventuras del alfabeto: Un juego interactivo que enseña las letras del alfabeto a través de canciones y actividades divertidas.
 
 Números mágicos: Ayuda a los niños a aprender los números y a contar con la ayuda de personajes mágicos.
@@ -23,7 +22,6 @@ Números mágicos: Ayuda a los niños a aprender los números y a contar con la 
 Colores y formas: Un juego que enseña a los niños a reconocer y diferenciar colores y formas a través de actividades creativas.
 
 ## **Juegos de creatividad:**
-
 Cuentos fantásticos: Permite a los niños crear sus propias historias utilizando una amplia variedad de personajes y escenarios.
 
 Arte y diseño: Un juego que fomenta la creatividad a través del dibujo y la pintura virtual.
