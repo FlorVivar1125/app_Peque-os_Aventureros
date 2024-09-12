@@ -10,7 +10,6 @@ Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la reso
 - Resolución de problemas.
 
 - Entorno seguro.
-
 ![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/bc11d6ae-5d02-46b1-837a-c7b8f9c84ffe)
 
 ## **Catálogo de productos:** ##
