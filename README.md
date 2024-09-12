@@ -37,7 +37,7 @@ Desafíos del castillo: Juegos de rompecabezas que ayudan a mejorar las habilida
 
 Aventura en la selva: Desafíos interactivos que requieren pensamiento crítico para resolver problemas y avanzar en la historia.
 
-## Modelo Lógico
+## **Modelo Lógico**
 ![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/a9337029-c753-45f8-b7cf-d7f692bca716)
 
 ## Tablas principales
