@@ -49,9 +49,9 @@ Categorías: Almacena las diferentes categorías en las que se pueden clasificar
 
 Opiniones: Almacena las opiniones y calificaciones de los usuarios sobre los productos (juegos educativos).
 
-## Estructura de la Base de Datos y Scripts en MySQL para Pequeños Aventureros
+## **Estructura de la Base de Datos y Scripts en MySQL para Pequeños Aventureros**
 
-***Creación de la Base de Datos y Tablas***
+**Creación de la Base de Datos y Tablas**
 
 -- Creación de la base de datos
 
@@ -123,7 +123,7 @@ CREATE TABLE opiniones (
 
 );
 
-***Inserción de Datos:***
+**Inserción de Datos:**
 
 -- Inserción de datos en la tabla categorías
 
@@ -212,7 +212,7 @@ Monitoreo Parental: Los padres pueden seguir el progreso de sus hijos a través 
 
 Seguridad: La aplicación asegura un entorno seguro para los niños, protegiendo su información personal y garantizando que el contenido sea apropiado para su edad.
 
-## Funcionalidades Clave
+## **Funcionalidades Clave**
 
 Pequeños Aventureros incluye una serie de funcionalidades diseñadas para maximizar la experiencia educativa de los usuarios:
 
