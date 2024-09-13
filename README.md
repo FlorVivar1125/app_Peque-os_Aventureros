@@ -1,5 +1,5 @@
 ## **App_Pequeños_Aventureros** ##
-stamos enfocadas en estimular el aprendizaje temprano, la creatividad y la resolución de problemas en un entorno seguro y entretenido para niños pequeños. Nuestra aplicación ofrece una variedad de juegos interactivos diseñados para fomentar el desarrollo cognitivo, emocional y social de los niños.
+Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la resolución de problemas en un entorno seguro y entretenido para niños pequeños. Nuestra aplicación ofrece una variedad de juegos interactivos diseñados para fomentar el desarrollo cognitivo, emocional y social de los niños.
 
 ## **Características:** ##
 
@@ -35,7 +35,7 @@ Aventura en la selva: Desafíos interactivos que requieren pensamiento crítico 
 ## **Modelo Lógico**
 ![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/a9337029-c753-45f8-b7cf-d7f692bca716)
 
-## Tablas principales
+## **Tablas principales**
 Usuarios: Información sobre los usuarios (padres o tutores) que se registran en la aplicación.
 
 Productos: Almacena información sobre los juegos educativos disponibles en la aplicación.
