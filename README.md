@@ -4,7 +4,7 @@ Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la reso
 ## **Características:** ##
 
 - Juegos educativos.
-
+asdasdadsdadsadasdsadda
 - Actividades creativas.
 
 - Resolución de problemas.
