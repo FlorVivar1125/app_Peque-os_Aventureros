@@ -177,7 +177,6 @@ Objetivo: Mostrar todos los productos junto con su categoría.
 
 SELECT nombre_producto,
 
-
 (SELECT nombre_categoria
 
 FROM categorias
@@ -185,6 +184,25 @@ FROM categorias
 WHERE id_categoria = productos.categoria_id) AS Categoria,
 
 descripcion FROM productos;
+
+
+Consulta 2: Opiniones Promedio por Categoría
+
+Objetivo: Mostrar la calificación promedio de los productos en cada categoría.
+
+SELECT 
+    nombre_categoria, 
+    (SELECT AVG(calificacion) 
+     FROM opiniones 
+     WHERE id_producto IN 
+         (SELECT id_producto 
+          FROM productos 
+          WHERE categoria_id = categorias.id_categoria)) AS Promedio_Calificacion
+FROM 
+    categorias;
+
+
+
 
 
 ## **Beneficios de la Aplicación**
