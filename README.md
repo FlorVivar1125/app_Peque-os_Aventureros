@@ -57,7 +57,7 @@ USE pequenios_aventureros;
 -- Tabla de usuarios
 
 CREATE TABLE usuarios (
-    
+
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     
     nombre VARCHAR(100),
@@ -96,7 +96,7 @@ CREATE TABLE productos (
 
 );
 
--- Tabla de opiniones (reviews de los productos)
+-- Tabla de opiniones
 
 CREATE TABLE opiniones (
 
@@ -113,10 +113,11 @@ CREATE TABLE opiniones (
     fecha_opinion DATE,
     
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
-   
+    
     FOREIGN KEY (id_producto) REFERENCES productos(id_producto)
 
 );
+
 
 **Inserción de Datos:**
 
@@ -167,7 +168,6 @@ INSERT INTO opiniones (id_usuario, id_producto, calificacion, comentario, fecha_
 (2, 2, 4, 'Buen juego, aunque podrían agregar más niveles', '2023-02-20'),
 
 (3, 4, 5, 'Muy educativo, a los niños les encantan los desafíos', '2023-03-10');
-
 
 ## **Reportes del Problema**
 
