@@ -1,20 +1,23 @@
 ## **App_Pequeños_Aventureros** ##
+
 Estamos enfocadas en estimular el aprendizaje temprano, la creatividad y la resolución de problemas en un entorno seguro y entretenido para niños pequeños. Nuestra aplicación ofrece una variedad de juegos interactivos diseñados para fomentar el desarrollo cognitivo, emocional y social de los niños.
 
 ## **Características:** ##
 
 - Juegos educativos.
-asdasdadsdadsadasdsadda
+
 - Actividades creativas.
 
 - Resolución de problemas.
 
 - Entorno seguro.
+
 ![image](https://github.com/FlorVivar1125/app_Peque-os_Aventureros/assets/168501110/bc11d6ae-5d02-46b1-837a-c7b8f9c84ffe)
 
 ## **Catálogo de productos:** ##
 
 ## **Juegos de aprendizaje temprano:**
+
 Aventuras del alfabeto: Un juego interactivo que enseña las letras del alfabeto a través de canciones y actividades divertidas.
 
 Números mágicos: Ayuda a los niños a aprender los números y a contar con la ayuda de personajes mágicos.
@@ -325,4 +328,5 @@ Realidad Aumentada (AR): Implementación de tecnologías de realidad aumentada p
 La aplicación Pequeños Aventureros se ha convertido en una herramienta esencial para el aprendizaje temprano de los niños, combinando educación y entretenimiento en un solo lugar.
 Con su enfoque en la seguridad, personalización y continua innovación, se asegura de que los niños no solo se diviertan, sino que también desarrollen habilidades esenciales para su futuro.
 
+![image](https://github.com/user-attachments/assets/453e1ca6-375d-460e-9cce-f815240f7c42)
 
