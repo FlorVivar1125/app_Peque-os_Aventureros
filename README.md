@@ -171,7 +171,7 @@ INSERT INTO opiniones (id_usuario, id_producto, calificacion, comentario, fecha_
 
 ## **Reportes del Problema**
 
-Consulta 1: Productos y sus Categorías
+**Consulta 1**: Productos y sus Categorías
 
 Objetivo: Mostrar todos los productos junto con su categoría.
 
@@ -186,23 +186,91 @@ WHERE id_categoria = productos.categoria_id) AS Categoria,
 descripcion FROM productos;
 
 
-Consulta 2: Opiniones Promedio por Categoría
+**Consulta 2:** Opiniones Promedio por Categoría
 
 Objetivo: Mostrar la calificación promedio de los productos en cada categoría.
 
 SELECT 
     nombre_categoria, 
+    
     (SELECT AVG(calificacion) 
+    
      FROM opiniones 
+     
      WHERE id_producto IN 
+     
          (SELECT id_producto 
+         
           FROM productos 
+          
           WHERE categoria_id = categorias.id_categoria)) AS Promedio_Calificacion
+
 FROM 
+
     categorias;
 
+**Consulta 3:** Opiniones Detalladas por Usuario.
+
+Objetivo: Mostrar todas las opiniones que ha hecho un usuario específico junto con el nombre del producto.
+
+SELECT 
+
+    (SELECT nombre 
+    
+    
+     FROM usuarios 
+     
+     WHERE id_usuario = opiniones.id_usuario) AS Usuario, 
+   
+    (SELECT nombre_producto 
+    
+     FROM productos 
+     
+     WHERE id_producto = opiniones.id_producto) AS Producto, 
+  
+    comentario, 
+    
+    calificacion
+
+FROM 
+
+    opiniones
+    
+WHERE 
+    
+    id_usuario = (SELECT id_usuario 
+    
+                  FROM usuarios 
+                  
+                  WHERE nombre = 'María López'); -- Cambia el nombre según sea necesario
+
+**Consulta 4:** Productos con Más Opiniones.
+
+Objetivo: Mostrar todas las opiniones que ha hecho un usuario específico junto con el nombre del producto.
+
+SELECT 
 
 
+    nombre_producto, 
+    
+    (SELECT COUNT(*) 
+    
+     FROM opiniones 
+     
+     WHERE id_producto = productos.id_producto) AS Numero_de_Opiniones
+
+FROM 
+
+    productos
+
+ORDER BY 
+
+    Numero_de_Opiniones DESC;
+
+
+**OBSERVACIÓN**
+
+Los reportes generados permiten una visión detallada del comportamiento de los usuarios y la popularidad de los productos dentro de la aplicación Pequeños Aventureros. A través de estas consultas, se puede observar que ciertos productos reciben más interacciones que otros, y las calificaciones promedio ofrecen una referencia clara sobre la satisfacción general de los usuarios en cada categoría.
 
 
 ## **Beneficios de la Aplicación**
