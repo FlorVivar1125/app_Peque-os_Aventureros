@@ -149,7 +149,7 @@ Con su enfoque en la seguridad, personalización y continua innovación, se aseg
 
 **Colaboradoras:**
 
-- Scarlett Delpezo.
+- Scarlett Del Pezo.
 
 - Ashley Mantilla.
 
