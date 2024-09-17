@@ -61,12 +61,20 @@ Objetivo: Mostrar todas las opiniones que ha hecho un usuario específico junto 
 ![image](https://github.com/user-attachments/assets/a391ff0b-d6be-43c4-ba40-e38d86ecadd4)
 
 
+![image](https://github.com/user-attachments/assets/ebce0c74-0b76-4e23-80d4-fcea0a3dd896)
+
+
+
 **Consulta 2:** Productos con Más Opiniones.
 
 Objetivo: Mostrar todas las opiniones que ha hecho un usuario específico junto con el nombre del producto.
 
 
 ![image](https://github.com/user-attachments/assets/667cbe48-f929-402e-bd20-5bb720d449b9)
+
+
+![image](https://github.com/user-attachments/assets/b5535b7e-8981-40db-9c9f-f55181b3ec03)
+
 
 
 **Consulta 3**: Productos y sus Categorías
@@ -77,6 +85,11 @@ Objetivo: Mostrar todos los productos junto con su categoría.
 ![image](https://github.com/user-attachments/assets/0f47d8cd-56bd-4797-a5cd-c9c83c254b8d)
 
 
+![image](https://github.com/user-attachments/assets/e5991276-2092-40a7-8453-625583f6d42e)
+
+
+
+
 
 **Consulta 4:** Opiniones Promedio por Categoría
 
@@ -84,6 +97,10 @@ Objetivo: Mostrar la calificación promedio de los productos en cada categoría.
 
 
 ![image](https://github.com/user-attachments/assets/d65f8687-d7b3-4ae8-9f81-a82b205b9da5)
+
+
+![image](https://github.com/user-attachments/assets/85e62017-a28b-493e-befd-2b0215800ad0)
+
 
 
 
