@@ -50,109 +50,42 @@ Categorías: Almacena las diferentes categorías en las que se pueden clasificar
 
 Opiniones: Almacena las opiniones y calificaciones de los usuarios sobre los productos (juegos educativos).
 
-## **Estructura de la Base de Datos y Scripts en MySQL para Pequeños Aventureros**
-
-![image](https://github.com/user-attachments/assets/e9a3b4e9-01f7-40a2-8efc-4434e314df8e)
-
 
 
 ## *Reportes del Problema*
+**Consulta 1:** Opiniones Detalladas por Usuario.
 
-**Consulta 1**: Productos y sus Categorías
+Objetivo: Mostrar todas las opiniones que ha hecho un usuario específico junto con el nombre del producto.
+
+
+![image](https://github.com/user-attachments/assets/a391ff0b-d6be-43c4-ba40-e38d86ecadd4)
+
+
+**Consulta 2:** Productos con Más Opiniones.
+
+Objetivo: Mostrar todas las opiniones que ha hecho un usuario específico junto con el nombre del producto.
+
+
+![image](https://github.com/user-attachments/assets/667cbe48-f929-402e-bd20-5bb720d449b9)
+
+
+**Consulta 3**: Productos y sus Categorías
 
 Objetivo: Mostrar todos los productos junto con su categoría.
 
-SELECT nombre_producto,
 
-(SELECT nombre_categoria
-
-FROM categorias
-
-WHERE id_categoria = productos.categoria_id) AS Categoria,
-
-descripcion FROM productos;
+![image](https://github.com/user-attachments/assets/0f47d8cd-56bd-4797-a5cd-c9c83c254b8d)
 
 
-**Consulta 2:** Opiniones Promedio por Categoría
+
+**Consulta 4:** Opiniones Promedio por Categoría
 
 Objetivo: Mostrar la calificación promedio de los productos en cada categoría.
 
-SELECT 
-    nombre_categoria, 
-    
-    (SELECT AVG(calificacion) 
-    
-     FROM opiniones 
-     
-     WHERE id_producto IN 
-     
-         (SELECT id_producto 
-         
-          FROM productos 
-          
-          WHERE categoria_id = categorias.id_categoria)) AS Promedio_Calificacion
 
-FROM 
-
-    categorias;
-
-**Consulta 3:** Opiniones Detalladas por Usuario.
-
-Objetivo: Mostrar todas las opiniones que ha hecho un usuario específico junto con el nombre del producto.
-
-SELECT 
-
-    (SELECT nombre 
-    
-    
-     FROM usuarios 
-     
-     WHERE id_usuario = opiniones.id_usuario) AS Usuario, 
-   
-    (SELECT nombre_producto 
-    
-     FROM productos 
-     
-     WHERE id_producto = opiniones.id_producto) AS Producto, 
-  
-    comentario, 
-    
-    calificacion
-
-FROM 
-
-    opiniones
-    
-WHERE 
-    
-    id_usuario = (SELECT id_usuario 
-    
-                  FROM usuarios 
-                  
-                  WHERE nombre = 'María López'); -- Cambia el nombre según sea necesario
-
-**Consulta 4:** Productos con Más Opiniones.
-
-Objetivo: Mostrar todas las opiniones que ha hecho un usuario específico junto con el nombre del producto.
-
-SELECT 
+![image](https://github.com/user-attachments/assets/d65f8687-d7b3-4ae8-9f81-a82b205b9da5)
 
 
-    nombre_producto, 
-    
-    (SELECT COUNT(*) 
-    
-     FROM opiniones 
-     
-     WHERE id_producto = productos.id_producto) AS Numero_de_Opiniones
-
-FROM 
-
-    productos
-
-ORDER BY 
-
-    Numero_de_Opiniones DESC;
 
 
 **OBSERVACIÓN**
